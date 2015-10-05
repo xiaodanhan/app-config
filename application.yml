@@ -2,3 +2,7 @@ logging:
   level:
     io:
       pivotal: DEBUG
+eureka:
+  instance:
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${server.port:8080}}
