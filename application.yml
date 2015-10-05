@@ -9,3 +9,11 @@ eureka:
 client:
      serviceUrl:
        defaultZone: ${vcap.services.service-registry1.credentials.uri:http://localhost:8761}/eureka/
+---
+spring:
+  profiles: cloud
+eureka:
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
+
