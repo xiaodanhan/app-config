@@ -6,3 +6,6 @@ eureka:
   instance:
     metadataMap:
       instanceId: ${vcap.application.instance_id:${spring.application.name}:${server.port:8080}}
+client:
+     serviceUrl:
+       defaultZone: ${vcap.services.service-registry1.credentials.uri:http://localhost:8761}/eureka/
