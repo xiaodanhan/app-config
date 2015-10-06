@@ -1,4 +1,4 @@
-logging:
+ logging:
    level:
      io:
        pivotal: DEBUG
@@ -9,6 +9,7 @@ logging:
    client:    # <--- ADD THE CLIENT SECTION!!!
      serviceUrl:
        defaultZone: ${vcap.services.service-registry.credentials.uri:http://localhost:8761}/eureka/
+       
 ---  # <-- ADD THIS SECTION
 spring:
   profiles: cloud
