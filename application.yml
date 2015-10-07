@@ -1,16 +1,1 @@
-greeting: git-greeting
-spring:
- config:
-  name: configservr
-logging:
-  level:
-    io:
-      pivotal: DEBUG
----  # <-- ADD THIS SECTION
-spring:
-  profiles: cloud
-eureka:
-  instance:
-    hostname: ${vcap.application.uris[0]}
-    nonSecurePort: 80
-greeting: CJD
+
