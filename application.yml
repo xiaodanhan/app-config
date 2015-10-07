@@ -1,3 +1,4 @@
+greeting: git-greeting
 spring:
  config:
   name: configservr
